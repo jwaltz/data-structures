@@ -9,7 +9,7 @@
 public class Node<E> {
     
     private E data;
-    private Node next;
+    private Node<E> next;
     
     /**
      * Constructs a new node with the given data and points it to the
