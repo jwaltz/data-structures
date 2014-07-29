@@ -5,10 +5,16 @@
  * If a node does not point to another node its reference will be null.
  * 
  * @author Jonathan Waltz
+ * @param <E> the data type of the node's data
  */
 public class Node<E> {
-    
+    /**
+     * The node's internal data
+     */
     private E data;
+    /**
+     * A reference to the next node, forming a linked-list structure
+     */
     private Node<E> next;
     
     /**
