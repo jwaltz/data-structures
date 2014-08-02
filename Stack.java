@@ -55,7 +55,7 @@ public class Stack<E> {
      * @return the data on top of the stack.
      */
     public E peek() {
-      if (this.top == null) {
+      if (this.isEmpty()) {
         throw new IllegalStateException("Can't peek() into an empty stack");
       }
       return this.top.getData();
@@ -66,7 +66,7 @@ public class Stack<E> {
      * @return the data on top of the stack.
      */
     public E pop() {
-      if (this.top == null) {
+      if (this.isEmpty()) {
         throw new IllegalStateException("Can't pop() from an empty stack");
       }
       E data = this.top.getData();
